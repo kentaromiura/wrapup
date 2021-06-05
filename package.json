@@ -34,7 +34,7 @@
     "chalk": "4.1.1",
     "commander": "2.1",
     "escodegen": "1.0.x",
-    "esmangle": "0.0.x",
+    "esmangle": "1.0.1",
     "esprima": "4.0.1",
     "graphviz": "0.0.x",
     "mkdirp": "0.3",
