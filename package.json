@@ -1,8 +1,9 @@
 {
   "name": "wrapup",
   "description": "wraps up node packages for web development",
-  "version": "1.0.5",
-  "license": "MIT (http://mootools.net/license.txt)",
+  "version": "1.0.6",
+  "license": "MIT",
+  "licenseURL": "http://mootools.net/license.txt",
   "main": "./lib/main.js",
   "bin": {
     "wrup": "./bin/wrup.js"
@@ -32,18 +33,18 @@
     "async": "0.2",
     "chalk": "0.4",
     "commander": "2.1",
-    "prime": "0.3",
-    "esprima": "~1.0.4",
     "escodegen": "1.0.x",
     "esmangle": "0.0.x",
+    "esprima": "~1.0.4",
     "graphviz": "0.0.x",
     "mkdirp": "0.3",
+    "prime": "0.5.0",
     "require-relative": "~0.8.7"
   },
   "devDependencies": {
+    "ansidiff": "1.0",
     "expect.js": "0.2",
     "mocha": "1.12",
-    "ansidiff": "1.0",
     "through": "~2.3.4"
   },
   "optionalDependencies": {},
