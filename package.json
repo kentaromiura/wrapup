@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "async": "0.2",
-    "chalk": "0.4",
+    "chalk": "4.1.1",
     "commander": "2.1",
     "escodegen": "1.0.x",
     "esmangle": "0.0.x",
