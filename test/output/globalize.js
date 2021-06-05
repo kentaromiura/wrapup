@@ -1,5 +1,5 @@
-(function(modules, global) {
-    var cache = {}, require = function(id) {
+(function (modules, global) {
+    var cache = {}, require = function (id) {
         var module = cache[id];
         if (!module) {
             module = cache[id] = {};
@@ -8,9 +8,9 @@
         }
         return module.exports;
     };
-    this["testing"] = require("0");
-})({
-    "0": function(require, module, exports, global) {
-        module.exports = "e";
+    this['testing'] = require('0');
+}({
+    '0': function (require, module, exports, global) {
+        module.exports = 'e';
     }
-}, this);
+}, this));

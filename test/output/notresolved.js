@@ -1,5 +1,5 @@
-(function(modules, global) {
-    var cache = {}, require = function(id) {
+(function (modules, global) {
+    var cache = {}, require = function (id) {
         var module = cache[id];
         if (!module) {
             module = cache[id] = {};
@@ -8,15 +8,11 @@
         }
         return module.exports;
     };
-    require("0");
-})({
-    "0": function(require, module, exports, global) {
-        "use strict";
-
-        // this module does not exist
+    require('0');
+}({
+    '0': function (require, module, exports, global) {
+        'use strict';
         null;
-
-        // native require, does not exist
         null;
     }
-}, this);
+}, this));

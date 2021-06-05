@@ -18,7 +18,6 @@
               "name": "global"
             }
           ],
-          "defaults": [],
           "body": {
             "type": "BlockStatement",
             "body": [
@@ -51,7 +50,6 @@
                           "name": "id"
                         }
                       ],
-                      "defaults": [],
                       "body": {
                         "type": "BlockStatement",
                         "body": [
@@ -227,9 +225,9 @@
                           }
                         ]
                       },
-                      "rest": null,
                       "generator": false,
-                      "expression": false
+                      "expression": false,
+                      "async": false
                     }
                   }
                 ],
@@ -246,16 +244,17 @@
                   "arguments": [
                     {
                       "type": "Literal",
-                      "value": "0"
+                      "value": "0",
+                      "raw": "'uid'"
                     }
                   ]
                 }
               }
             ]
           },
-          "rest": null,
           "generator": false,
-          "expression": false
+          "expression": false,
+          "async": false
         },
         "arguments": [
           {
@@ -265,8 +264,10 @@
                 "type": "Property",
                 "key": {
                   "type": "Literal",
-                  "value": "0"
+                  "value": "0",
+                  "raw": "\"@name\""
                 },
+                "computed": false,
                 "value": {
                   "type": "FunctionExpression",
                   "id": null,
@@ -288,7 +289,6 @@
                       "name": "global"
                     }
                   ],
-                  "defaults": [],
                   "body": {
                     "type": "BlockStatement",
                     "body": [
@@ -307,13 +307,15 @@
                               "end": {
                                 "line": 1,
                                 "column": 7
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           },
                           "arguments": [
                             {
                               "type": "Literal",
                               "value": "1",
+                              "raw": "\"./e\"",
                               "loc": {
                                 "start": {
                                   "line": 1,
@@ -322,7 +324,8 @@
                                 "end": {
                                   "line": 1,
                                   "column": 13
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             }
                           ],
@@ -334,7 +337,8 @@
                             "end": {
                               "line": 1,
                               "column": 14
-                            }
+                            },
+                            "source": "test/fixtures/up.js"
                           }
                         },
                         "loc": {
@@ -343,9 +347,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 2,
-                            "column": 0
-                          }
+                            "line": 1,
+                            "column": 14
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -364,7 +369,8 @@
                                 "end": {
                                   "line": 2,
                                   "column": 5
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "init": {
@@ -383,13 +389,15 @@
                                     "end": {
                                       "line": 2,
                                       "column": 15
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 },
                                 "arguments": [
                                   {
                                     "type": "Literal",
                                     "value": "2",
+                                    "raw": "\"./up1\"",
                                     "loc": {
                                       "start": {
                                         "line": 2,
@@ -398,7 +406,8 @@
                                       "end": {
                                         "line": 2,
                                         "column": 23
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   }
                                 ],
@@ -410,7 +419,8 @@
                                   "end": {
                                     "line": 2,
                                     "column": 24
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "property": {
@@ -424,7 +434,8 @@
                                   "end": {
                                     "line": 2,
                                     "column": 29
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "loc": {
@@ -435,7 +446,8 @@
                                 "end": {
                                   "line": 2,
                                   "column": 29
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -446,7 +458,8 @@
                               "end": {
                                 "line": 2,
                                 "column": 29
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           }
                         ],
@@ -457,9 +470,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 3,
-                            "column": 0
-                          }
+                            "line": 2,
+                            "column": 29
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -478,7 +492,8 @@
                                 "end": {
                                   "line": 3,
                                   "column": 5
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "init": {
@@ -496,13 +511,15 @@
                                     "end": {
                                       "line": 3,
                                       "column": 20
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 },
                                 "arguments": [
                                   {
                                     "type": "Literal",
                                     "value": "2",
+                                    "raw": "\"./up1\"",
                                     "loc": {
                                       "start": {
                                         "line": 3,
@@ -511,7 +528,8 @@
                                       "end": {
                                         "line": 3,
                                         "column": 28
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   }
                                 ],
@@ -523,7 +541,8 @@
                                   "end": {
                                     "line": 3,
                                     "column": 29
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "arguments": [],
@@ -535,7 +554,8 @@
                                 "end": {
                                   "line": 3,
                                   "column": 32
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -546,7 +566,8 @@
                               "end": {
                                 "line": 3,
                                 "column": 32
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           }
                         ],
@@ -557,9 +578,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 4,
-                            "column": 0
-                          }
+                            "line": 3,
+                            "column": 32
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -578,7 +600,8 @@
                                 "end": {
                                   "line": 4,
                                   "column": 5
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "init": {
@@ -594,13 +617,15 @@
                                   "end": {
                                     "line": 4,
                                     "column": 19
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "arguments": [
                                 {
                                   "type": "Literal",
                                   "value": "2",
+                                  "raw": "\"./up1\"",
                                   "loc": {
                                     "start": {
                                       "line": 4,
@@ -609,7 +634,8 @@
                                     "end": {
                                       "line": 4,
                                       "column": 27
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 }
                               ],
@@ -621,7 +647,8 @@
                                 "end": {
                                   "line": 4,
                                   "column": 28
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -632,7 +659,8 @@
                               "end": {
                                 "line": 4,
                                 "column": 28
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           }
                         ],
@@ -643,9 +671,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 5,
-                            "column": 0
-                          }
+                            "line": 4,
+                            "column": 28
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -664,7 +693,8 @@
                                 "end": {
                                   "line": 5,
                                   "column": 5
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "init": {
@@ -683,9 +713,11 @@
                                       "end": {
                                         "line": 5,
                                         "column": 10
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   },
+                                  "computed": false,
                                   "value": {
                                     "type": "CallExpression",
                                     "callee": {
@@ -699,13 +731,15 @@
                                         "end": {
                                           "line": 5,
                                           "column": 19
-                                        }
+                                        },
+                                        "source": "test/fixtures/up.js"
                                       }
                                     },
                                     "arguments": [
                                       {
                                         "type": "Literal",
                                         "value": "2",
+                                        "raw": "\"./up1\"",
                                         "loc": {
                                           "start": {
                                             "line": 5,
@@ -714,7 +748,8 @@
                                           "end": {
                                             "line": 5,
                                             "column": 27
-                                          }
+                                          },
+                                          "source": "test/fixtures/up.js"
                                         }
                                       }
                                     ],
@@ -726,10 +761,13 @@
                                       "end": {
                                         "line": 5,
                                         "column": 28
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   },
                                   "kind": "init",
+                                  "method": false,
+                                  "shorthand": false,
                                   "loc": {
                                     "start": {
                                       "line": 5,
@@ -738,7 +776,8 @@
                                     "end": {
                                       "line": 5,
                                       "column": 28
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 }
                               ],
@@ -750,7 +789,8 @@
                                 "end": {
                                   "line": 5,
                                   "column": 29
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -761,7 +801,8 @@
                               "end": {
                                 "line": 5,
                                 "column": 29
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           }
                         ],
@@ -772,9 +813,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 6,
-                            "column": 0
-                          }
+                            "line": 5,
+                            "column": 29
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -793,7 +835,8 @@
                                 "end": {
                                   "line": 6,
                                   "column": 5
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "init": {
@@ -812,13 +855,15 @@
                                     "end": {
                                       "line": 6,
                                       "column": 15
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 },
                                 "arguments": [
                                   {
                                     "type": "Literal",
                                     "value": "1",
+                                    "raw": "\"./e\"",
                                     "loc": {
                                       "start": {
                                         "line": 6,
@@ -827,7 +872,8 @@
                                       "end": {
                                         "line": 6,
                                         "column": 21
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   }
                                 ],
@@ -839,7 +885,8 @@
                                   "end": {
                                     "line": 6,
                                     "column": 22
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "right": {
@@ -855,13 +902,15 @@
                                     "end": {
                                       "line": 6,
                                       "column": 32
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 },
                                 "arguments": [
                                   {
                                     "type": "Literal",
                                     "value": "1",
+                                    "raw": "\"./e\"",
                                     "loc": {
                                       "start": {
                                         "line": 6,
@@ -870,7 +919,8 @@
                                       "end": {
                                         "line": 6,
                                         "column": 38
-                                      }
+                                      },
+                                      "source": "test/fixtures/up.js"
                                     }
                                   }
                                 ],
@@ -882,7 +932,8 @@
                                   "end": {
                                     "line": 6,
                                     "column": 39
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "loc": {
@@ -893,7 +944,8 @@
                                 "end": {
                                   "line": 6,
                                   "column": 39
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -904,7 +956,8 @@
                               "end": {
                                 "line": 6,
                                 "column": 39
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           }
                         ],
@@ -915,9 +968,10 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 7,
-                            "column": 0
-                          }
+                            "line": 6,
+                            "column": 39
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       },
                       {
@@ -939,7 +993,8 @@
                                 "end": {
                                   "line": 7,
                                   "column": 6
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "property": {
@@ -953,7 +1008,8 @@
                                 "end": {
                                   "line": 7,
                                   "column": 14
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "loc": {
@@ -964,7 +1020,8 @@
                               "end": {
                                 "line": 7,
                                 "column": 14
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           },
                           "right": {
@@ -982,13 +1039,15 @@
                                   "end": {
                                     "line": 7,
                                     "column": 24
-                                  }
+                                  },
+                                  "source": "test/fixtures/up.js"
                                 }
                               },
                               "arguments": [
                                 {
                                   "type": "Literal",
                                   "value": "2",
+                                  "raw": "\"./up1\"",
                                   "loc": {
                                     "start": {
                                       "line": 7,
@@ -997,7 +1056,8 @@
                                     "end": {
                                       "line": 7,
                                       "column": 32
-                                    }
+                                    },
+                                    "source": "test/fixtures/up.js"
                                   }
                                 }
                               ],
@@ -1009,7 +1069,8 @@
                                 "end": {
                                   "line": 7,
                                   "column": 33
-                                }
+                                },
+                                "source": "test/fixtures/up.js"
                               }
                             },
                             "arguments": [],
@@ -1021,7 +1082,8 @@
                               "end": {
                                 "line": 7,
                                 "column": 35
-                              }
+                              },
+                              "source": "test/fixtures/up.js"
                             }
                           },
                           "loc": {
@@ -1032,7 +1094,8 @@
                             "end": {
                               "line": 7,
                               "column": 35
-                            }
+                            },
+                            "source": "test/fixtures/up.js"
                           }
                         },
                         "loc": {
@@ -1041,25 +1104,30 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 8,
-                            "column": 0
-                          }
+                            "line": 7,
+                            "column": 35
+                          },
+                          "source": "test/fixtures/up.js"
                         }
                       }
                     ]
                   },
-                  "rest": null,
                   "generator": false,
-                  "expression": false
+                  "expression": false,
+                  "async": false
                 },
-                "kind": "init"
+                "kind": "init",
+                "method": false,
+                "shorthand": false
               },
               {
                 "type": "Property",
                 "key": {
                   "type": "Literal",
-                  "value": "1"
+                  "value": "1",
+                  "raw": "\"@name\""
                 },
+                "computed": false,
                 "value": {
                   "type": "FunctionExpression",
                   "id": null,
@@ -1081,7 +1149,6 @@
                       "name": "global"
                     }
                   ],
-                  "defaults": [],
                   "body": {
                     "type": "BlockStatement",
                     "body": [
@@ -1104,7 +1171,8 @@
                                 "end": {
                                   "line": 1,
                                   "column": 6
-                                }
+                                },
+                                "source": "test/fixtures/e.js"
                               }
                             },
                             "property": {
@@ -1118,7 +1186,8 @@
                                 "end": {
                                   "line": 1,
                                   "column": 14
-                                }
+                                },
+                                "source": "test/fixtures/e.js"
                               }
                             },
                             "loc": {
@@ -1129,12 +1198,14 @@
                               "end": {
                                 "line": 1,
                                 "column": 14
-                              }
+                              },
+                              "source": "test/fixtures/e.js"
                             }
                           },
                           "right": {
                             "type": "Literal",
                             "value": "e",
+                            "raw": "'e'",
                             "loc": {
                               "start": {
                                 "line": 1,
@@ -1143,7 +1214,8 @@
                               "end": {
                                 "line": 1,
                                 "column": 20
-                              }
+                              },
+                              "source": "test/fixtures/e.js"
                             }
                           },
                           "loc": {
@@ -1154,7 +1226,8 @@
                             "end": {
                               "line": 1,
                               "column": 20
-                            }
+                            },
+                            "source": "test/fixtures/e.js"
                           }
                         },
                         "loc": {
@@ -1163,25 +1236,30 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 2,
-                            "column": 0
-                          }
+                            "line": 1,
+                            "column": 20
+                          },
+                          "source": "test/fixtures/e.js"
                         }
                       }
                     ]
                   },
-                  "rest": null,
                   "generator": false,
-                  "expression": false
+                  "expression": false,
+                  "async": false
                 },
-                "kind": "init"
+                "kind": "init",
+                "method": false,
+                "shorthand": false
               },
               {
                 "type": "Property",
                 "key": {
                   "type": "Literal",
-                  "value": "2"
+                  "value": "2",
+                  "raw": "\"@name\""
                 },
+                "computed": false,
                 "value": {
                   "type": "FunctionExpression",
                   "id": null,
@@ -1203,7 +1281,6 @@
                       "name": "global"
                     }
                   ],
-                  "defaults": [],
                   "body": {
                     "type": "BlockStatement",
                     "body": [
@@ -1226,7 +1303,8 @@
                                 "end": {
                                   "line": 1,
                                   "column": 6
-                                }
+                                },
+                                "source": "test/fixtures/up1.js"
                               }
                             },
                             "property": {
@@ -1240,7 +1318,8 @@
                                 "end": {
                                   "line": 1,
                                   "column": 14
-                                }
+                                },
+                                "source": "test/fixtures/up1.js"
                               }
                             },
                             "loc": {
@@ -1251,14 +1330,14 @@
                               "end": {
                                 "line": 1,
                                 "column": 14
-                              }
+                              },
+                              "source": "test/fixtures/up1.js"
                             }
                           },
                           "right": {
                             "type": "FunctionExpression",
                             "id": null,
                             "params": [],
-                            "defaults": [],
                             "body": {
                               "type": "BlockStatement",
                               "body": [
@@ -1280,7 +1359,8 @@
                                           "end": {
                                             "line": 2,
                                             "column": 11
-                                          }
+                                          },
+                                          "source": "test/fixtures/up1.js"
                                         }
                                       },
                                       "property": {
@@ -1294,7 +1374,8 @@
                                           "end": {
                                             "line": 2,
                                             "column": 15
-                                          }
+                                          },
+                                          "source": "test/fixtures/up1.js"
                                         }
                                       },
                                       "loc": {
@@ -1305,13 +1386,15 @@
                                         "end": {
                                           "line": 2,
                                           "column": 15
-                                        }
+                                        },
+                                        "source": "test/fixtures/up1.js"
                                       }
                                     },
                                     "arguments": [
                                       {
                                         "type": "Literal",
                                         "value": "up1",
+                                        "raw": "\"up1\"",
                                         "loc": {
                                           "start": {
                                             "line": 2,
@@ -1320,7 +1403,8 @@
                                           "end": {
                                             "line": 2,
                                             "column": 21
-                                          }
+                                          },
+                                          "source": "test/fixtures/up1.js"
                                         }
                                       }
                                     ],
@@ -1332,7 +1416,8 @@
                                       "end": {
                                         "line": 2,
                                         "column": 22
-                                      }
+                                      },
+                                      "source": "test/fixtures/up1.js"
                                     }
                                   },
                                   "loc": {
@@ -1341,9 +1426,10 @@
                                       "column": 4
                                     },
                                     "end": {
-                                      "line": 3,
-                                      "column": 0
-                                    }
+                                      "line": 2,
+                                      "column": 22
+                                    },
+                                    "source": "test/fixtures/up1.js"
                                   }
                                 }
                               ],
@@ -1355,12 +1441,13 @@
                                 "end": {
                                   "line": 3,
                                   "column": 1
-                                }
+                                },
+                                "source": "test/fixtures/up1.js"
                               }
                             },
-                            "rest": null,
                             "generator": false,
                             "expression": false,
+                            "async": false,
                             "loc": {
                               "start": {
                                 "line": 1,
@@ -1369,7 +1456,8 @@
                               "end": {
                                 "line": 3,
                                 "column": 1
-                              }
+                              },
+                              "source": "test/fixtures/up1.js"
                             }
                           },
                           "loc": {
@@ -1380,7 +1468,8 @@
                             "end": {
                               "line": 3,
                               "column": 1
-                            }
+                            },
+                            "source": "test/fixtures/up1.js"
                           }
                         },
                         "loc": {
@@ -1389,18 +1478,21 @@
                             "column": 0
                           },
                           "end": {
-                            "line": 4,
-                            "column": 0
-                          }
+                            "line": 3,
+                            "column": 1
+                          },
+                          "source": "test/fixtures/up1.js"
                         }
                       }
                     ]
                   },
-                  "rest": null,
                   "generator": false,
-                  "expression": false
+                  "expression": false,
+                  "async": false
                 },
-                "kind": "init"
+                "kind": "init",
+                "method": false,
+                "shorthand": false
               }
             ]
           },
@@ -1410,5 +1502,6 @@
         ]
       }
     }
-  ]
+  ],
+  "sourceType": "script"
 }
